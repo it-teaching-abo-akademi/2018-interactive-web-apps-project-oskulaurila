@@ -1,32 +1,29 @@
-.App {
-  text-align: center;
+body {
+    background-color: #1f1c2b;
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.portbtn {
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    margin: 10px 0 auto;
+    min-width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infoBox {
+    color: white;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    background-color: #C94362;
+    position: relative;
+    width: 460px;
+    font-size: 15px;
 }

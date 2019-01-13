@@ -1,0 +1,156 @@
+.container {
+    height: 253px;
+    width: 100%;
+    max-width: 460px;
+    border-radius: 3px;
+    background-color: #dbecec;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.container:nth-child(even) {
+    height: 253px;
+    width: 100%;
+    max-width: 460px;
+    border-radius: 3px;
+    float: right;
+    margin-right: 0;
+}
+
+button {
+    height: 27px;
+    width: 133px;
+    border-radius: 3px;
+    border: none;
+    background-color: #F2CE72;
+    float: left;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #F2CE72;
+    transition: all 0.3s;
+}
+
+.buttonRow {
+    bottom: 15px;
+    left: 15px;
+    width: 100%;
+    position: absolute;
+}
+
+.addStock {
+    background-color: #1FBE6D;
+}
+
+.graph {
+    background-color: #032B3A;
+    float: left;
+    margin-left: 15px;
+}
+
+.remove {
+    background-color: #C94362;
+    margin-left: 15px;
+}
+
+.title {
+    border: none;
+    width: 90%;
+    margin-top: 5px;
+    height: 30px;
+    color: #1f1c2b;
+    background: none;
+    padding-top: 5px;
+    float: left;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.title:hover {
+    background-color: #F2CE7260;
+    transition: all 0.3s;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    background: none;
+    color: #032B3A;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.stockCont {
+    width: 100%;
+    max-height: 155px;
+    min-height: 155px;
+    overflow-y: auto;
+    margin-top: 40px;
+
+}
+
+
+
+@media only screen and (max-width: 976px) {
+    .container {
+        width: calc(50% - 10px);
+        float: left;
+        min-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .container:nth-child(even) {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 30%;
+    }
+
+    .graph {
+        margin-left: 5px;
+    }
+
+    .buttonRow {
+        width: calc(100% - 20px);
+    }
+
+    .remove {
+        margin-left: 5px;
+        float: left;
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 400px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .container:nth-child(even) {
+        width: 100%;
+        max-width: 100%;
+        min-width: 400px;
+        float: left;
+    }
+
+    button,  .graph, .addStock, .remove {
+        width: calc(33% - 5px);
+    }
+}

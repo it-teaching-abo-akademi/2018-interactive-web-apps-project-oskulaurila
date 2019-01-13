@@ -1,0 +1,46 @@
+button.save {
+    background-color: #1FBE6D;
+    transition: all 0.5s;
+
+}
+
+button.cancel {
+    background-color: #032B3A;
+    transition: all 0.5s;
+}
+
+button.save:hover {
+    background-color: #024858;
+    transition: all 0.5s;
+}
+
+button.cancel:hover {
+    background-color: #0084b5;
+    transition: all 0.5s;
+}
+
+
+label {
+    color: #1f1c2b;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.form-control::placeholder {
+   color: lightgray;
+    text-transform: none;
+}
+
+.form-group:first-of-type .form-control {
+    text-transform: uppercase;
+}
+
+.modal-content {
+    border: none;
+    box-shadow: #1f1c2b 0px 5px 25px 0;
+
+}
+
+.modal {
+    background-color: #1f1c2b70;
+}
